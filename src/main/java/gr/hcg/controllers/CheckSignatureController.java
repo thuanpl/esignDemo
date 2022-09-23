@@ -39,7 +39,7 @@ public class CheckSignatureController {
         //return "home";
     }
 
-    @PostMapping("/")
+    @PostMapping("/signcheck")
     public Object singleFileUpload(Model model, @RequestParam("file") MultipartFile file, @RequestParam(value = "json", required = false) String json, HttpServletResponse response ) {
 
         if (file.isEmpty()) {

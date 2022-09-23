@@ -82,7 +82,7 @@ public class Signer {
         InputStream imageResource = new FileInputStream(imageName);
         signing.setImageBytes(readBytes(imageResource));
 
-        return signing.signPDF(is, os, tsaUrl, "Signature2");
+        return signing.signPDF(is, os, tsaUrl, "Signature5");
 
     }
 

@@ -36,9 +36,9 @@ public class PDShrink {
 
 
     public static void main(String[] args) {
-        try (PDDocument pdf = PDDocument.load(new File("foo.pdf"))) {
-            shrinkAllPages(pdf);
-            pdf.save("foo2.pdf");
+        try (PDDocument pdf = PDDocument.load(new File("src/test.pdf"))) {
+            shrinkFirstpage(pdf);
+            pdf.save("src/test2.pdf");
 
         } catch (IOException ioe) {
             ioe.printStackTrace();
